@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/gc_friendsheaderbtn_unpressed_inactive"
+        android:state_pressed="false"
+       />
+    <item
+        android:drawable="@drawable/gc_friendsheaderbtn_unpressed_inactive"
+        android:state_focused="true"
+        />
+    <item
+        android:drawable="@drawable/gc_friendsheaderbtn_pressed"/>
+</selector>

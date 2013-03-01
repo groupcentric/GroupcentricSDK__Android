@@ -1,0 +1,167 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    
+
+    <style name="gc_Header_Bar_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/gc_font_white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="gc_GroupList_Group_Name_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:textColor">@color/gc_font_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+   <style name="gc_GroupList_Group_Last_Message_Text">
+		<item name="android:textSize">13sp</item>
+		<item name="android:textColor">@color/gc_font_gray</item>
+    </style>
+    
+      <style name="gc_GroupList_Group_Last_Message_Date">
+		<item name="android:textSize">13sp</item>
+		<item name="android:paddingBottom">3dip</item>
+		<item name="android:textColor">@color/gc_font_gray</item>
+    </style>
+    
+   
+
+    <style name="gc_ChatList_User_Name_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginTop">3dip</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gc_font_gray</item>
+    </style>
+
+    <style name="gc_ChatList_Message_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gc_font_black</item>
+        <item name="android:layout_marginBottom">3dip</item>
+    </style>
+
+    <style name="gc_ChatList_Last_Message_Date_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/gc_last_message_date_color</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">8dip</item>
+    </style>
+
+    <style name="gc_ChatList_User_pic">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="gc_ChatList_User_pic_holder">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2dip</item>
+        <item name="android:layout_marginRight">2dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:background">@drawable/gc_chatpicbg</item>
+    </style>
+
+    <style name="gc_Chat_List_Header_Bar_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+    </style>
+
+    <style name="gc_FriendList_Friend_pic">
+        <item name="android:layout_width">75dip</item>
+        <item name="android:layout_height">75dip</item>
+        <item name="android:layout_marginLeft">2dip</item>
+        <item name="android:layout_marginTop">2dip</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="gc_FriendList_Friend_Name_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gc_font_black</item>
+    </style>
+    
+        <style name="gc_FriendList_Friend_location_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gc_font_gray</item>
+    </style>
+
+    <style name="gc_Header_Notification_Bar_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/gc_notification_header_blue</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="gc_Notification_List_Title_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gc_font_white</item>
+    </style>
+    
+    <style name="gc_Notification_List_Message_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gc_font_off_white</item>
+    </style>
+    
+    <style name="gc_Notification_List_Date_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gc_font_gray</item>
+    </style>
+
+    <style name="gc_FriendList_Map_Footer_Text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:layout_marginBottom">6dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gc_font_gray</item>
+    </style>
+
+    <style name="gc_FadeInFadeOut.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="gc_FadeInFadeOutTranslucentTheme" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/gc_FadeInFadeOut.Activity</item>
+    </style>
+
+</resources>

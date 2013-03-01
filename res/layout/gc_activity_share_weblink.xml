@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gc_headerbg" >
+
+        <TextView
+            android:id="@+id/edt_link_url"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/prog_loadurl"
+            android:background="@drawable/gc_edit_text"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:textColor="@color/gc_font_white" 
+            android:ellipsize="end" 
+            android:lines="1"
+            android:scrollHorizontally="true"/>
+     
+        <ProgressBar
+            android:id="@+id/prog_loadurl"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignTop="@+id/btn_stop"
+            android:layout_alignBottom="@+id/btn_stop"
+            android:layout_toLeftOf="@+id/btn_stop"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gc_btn_stop"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/gc_create_group_chat" />
+
+  
+
+    </RelativeLayout>
+
+
+       <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gc_headerbg" 
+        android:visibility="gone">
+
+
+
+        <EditText
+            android:id="@+id/edt_search_link_url"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_go"
+            android:background="@drawable/gc_edit_text"
+            android:hint="@string/gc_search_or_type_url"
+            android:imeOptions="actionGo"
+            android:inputType="textUri"
+            android:textColor="@color/gc_font_white" />
+
+        <ImageButton
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gc_btn_arrow"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/gc_create_group_chat" />
+
+
+
+    </RelativeLayout>
+        <WebView 
+             android:id="@+id/webView_share_link"
+             android:layout_below="@+id/header_bar"
+             android:layout_height="fill_parent"
+             android:layout_width="fill_parent"
+             ></WebView>
+        <RelativeLayout
+        android:id="@+id/chat_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gc_chatfooterbg" >
+    <RelativeLayout
+        android:id="@+id/dummy_layout"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+		 >
+        
+    </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edt_link_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_send_link"
+            android:background="@drawable/gc_edit_text"
+            android:hint="@string/gc_send_link_message_hint"
+            android:textColor="@color/gc_font_white"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_send_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gc_btn_send" />
+    </RelativeLayout>
+</RelativeLayout>

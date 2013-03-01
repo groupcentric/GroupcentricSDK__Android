@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layout_sdkfragment" 
+        android:background="@drawable/gc_insidebg"
+        >
+
+	<LinearLayout
+	    android:id="@+id/layout_signup_view1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:orientation="vertical"
+	    android:visibility="gone" >
+
+	    <TextView
+	        android:id="@+id/txtSignupView1Title1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginBottom="0px"
+	        android:layout_marginTop="16px"
+	        android:text="Add private groups to your account"
+	        android:textColor="@color/gc_blue"
+	        android:textSize="18sp"
+	        android:visibility="gone" >
+	    </TextView>
+	    
+	    <TextView
+	            android:id="@+id/txtThisAppUses"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="This app is part of the"
+	            android:textColor="@color/gc_blue"
+	            android:textSize="14sp"
+	            android:layout_marginTop="12px"
+	            android:layout_centerInParent="true"
+	        	android:layout_gravity="center_horizontal"
+	            android:textStyle="normal"
+	            android:visibility="gone" >
+	    </TextView>
+
+	    <TextView
+	        android:id="@+id/txtSignupView1Title1"
+	        android:layout_below="@+id/txtThisAppUses"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginBottom="10px"
+	        android:layout_marginTop="15px"
+	        android:text="Private Sharing &amp; Group Chat"
+	        android:textColor="@color/gc_blue"
+	        android:textSize="20sp"
+	        android:textStyle="bold">
+	    </TextView>
+
+	    <LinearLayout
+	        android:id="@+id/layout_txtSignupView1Title2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtSignupView1Title1"
+	        android:layout_centerInParent="true"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginBottom="16px"
+	        android:orientation="horizontal" 
+	        android:visibility="gone">
+
+	        <TextView
+	            android:id="@+id/txtSignup_by"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="by Groupcentric"
+	            android:textColor="@color/gc_font_midgray"
+	            android:textSize="14sp"
+	            android:textStyle="normal" >
+	        </TextView>
+	    </LinearLayout>
+
+	    <ImageView
+	        android:id="@+id/txtSignupView1Sub2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_margin="6px"
+	        android:src="@drawable/gc_greydividerline"
+	        android:visibility="gone" >
+	    </ImageView>
+
+	    <TextView
+	        android:id="@+id/txtSignupView1Sub1"
+	        android:layout_below="@+id/txtSignupView1Title1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10px"
+	        android:layout_marginTop="20px"
+	        android:layout_marginLeft="20px"
+	        android:layout_marginRight="20px"
+	        android:gravity="center_horizontal"
+	        android:text="Create private groups with your friends to chat and share with"
+	        android:textColor="@color/gc_font_midgray"
+	        android:lineSpacingMultiplier="1.2"
+	        android:textSize="17sp" >
+	    </TextView>
+
+	    <TextView
+	        android:id="@+id/txtSignupView1Sub3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtSignupView1Sub1"
+	        android:layout_margin="10px"
+	        android:gravity="center_horizontal"
+	        android:text="Share things from inside this app into any of your groups"
+	        android:textColor="@color/gc_font_midgray"
+	        android:lineSpacingMultiplier="1.2"
+	        android:textSize="17sp" >
+	    </TextView>
+
+	    
+
+	    <TextView
+	        android:id="@+id/txtSignupView1Sub5"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtSignupView1Sub3"
+	        android:layout_margin="10px"
+	        android:layout_marginBottom="10px"
+	        android:gravity="center_horizontal"
+	        android:text="Access your groups in any apps that use private group sharing"
+	        android:textColor="@color/gc_font_midgray"
+	        android:lineSpacingMultiplier="1.2"
+	        android:textSize="17sp">
+	    </TextView>
+
+	    <ImageButton
+	        android:id="@+id/imgSignup_GetStarted"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/txtSignupView1Sub5"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_margin="26px"
+	        android:background="@android:color/transparent"
+	        android:src="@drawable/gc_btn_start_group" />
+
+	    <TextView
+	        android:id="@+id/txt_learnmore"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginBottom="10dp"
+	        android:text="About/Privacy"
+	        android:textColor="@color/gc_font_midgray"
+	        android:textSize="14sp" />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/layout_signup_view2" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        >
+		<ScrollView
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@+id/lyt_colorline"
+	        android:fillViewport="true" >
+	
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txtRegisterLabel"
+	                android:layout_width="match_parent"
+	                android:gravity="center_horizontal"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="15dp"
+	                android:text="Private Group Sharing users must verify their phone to create groups."
+	                android:textColor="@color/gc_blue"
+	                android:textSize="16sp"
+	                 />
+	            
+	            <TextView
+	                android:id="@+id/txtname"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginTop="15dp"
+	                android:text="@string/gc_name"
+	                android:textColor="@color/gc_font_black"
+	                android:textSize="22sp"
+	                android:textStyle="bold"
+	                 />
+	
+	            <TextView
+	                android:id="@+id/txtnamedesc"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+	                android:layout_marginLeft="10dp"
+	                android:text="@string/gc_name_desc"
+	                android:textSize="16sp"
+	                android:textColor="@color/gc_font_gray"
+	                />
+	
+	            <EditText
+	                android:id="@+id/edt_signup_name"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:gravity="center"
+	                android:inputType="textPersonName"
+	                android:background="@drawable/gc_edit_text"
+	                android:maxLines="1" 
+	                android:hint="John Smith"
+	                android:textColorHint="@color/gc_font_lightgray"
+	                android:ellipsize="end"
+	                android:textSize="20sp"/>
+	
+	            <TextView
+	                android:id="@+id/txtphone"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginTop="15dp"
+	                android:text="@string/gc_phone"
+	                android:textColor="@color/gc_font_black"
+	                android:textSize="22sp"
+	                android:textStyle="bold"
+	                />
+	
+	            <TextView
+	                android:id="@+id/txtphonedesc"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+	                android:layout_marginLeft="10dp"
+	                android:text="So friends can add you (always private)"
+	                android:textSize="16sp"
+	                android:textColor="@color/gc_font_gray"
+	                 />
+	
+	            <EditText
+	                android:id="@+id/edt_signup_phone"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:gravity="center"
+	                android:inputType="phone"
+	                android:background="@drawable/gc_edit_text"
+	                android:maxLines="1" 
+	                android:hint="(###) ###-####"
+	                android:textColorHint="@color/gc_font_lightgray"
+	                android:ellipsize="end"
+	                android:textSize="20sp"/>
+	            
+	            <ImageButton
+				    android:id="@+id/imgSignup_Register"
+				    android:layout_height="wrap_content"
+	                android:background="@android:color/transparent"
+	                android:layout_gravity="center_horizontal"
+	                android:src="@drawable/gc_btn_signup_enter"
+	                android:layout_width="wrap_content"
+	                android:layout_marginTop="40px"
+	             />
+	           
+	
+	        </LinearLayout>
+	    </ScrollView>
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/layout_signup_view3" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        >
+		<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:fillViewport="true" >
+
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/txtname"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginTop="15dp"
+	                android:text="@string/gc_enter_pin"
+	                android:textColor="@color/gc_font_black"
+	                android:textSize="22sp"
+	                android:textStyle="bold"
+	                 />
+	
+	            <TextView
+	                android:id="@+id/txtpindesc"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="6dp"
+	                android:layout_marginLeft="10dp"
+	                android:textSize="16sp"
+	                android:text="Enter the PIN we texted to "
+	                android:textColor="@color/gc_font_gray"
+	                />
+	
+	            <EditText
+	                android:id="@+id/edt_pin"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:background="@drawable/gc_edit_text"
+	                android:gravity="center"
+	                android:hint="@string/gc_pin_hint"
+	                android:textColorHint="@color/gc_font_lightgray"
+	                android:inputType="number"
+	                android:maxLines="1"
+	                android:textSize="20sp" 
+	                android:ellipsize="end"/>
+	            
+	            <ImageButton
+				    android:id="@+id/imgSignup_VerifyPhone"
+				    android:layout_height="wrap_content"
+	                android:background="@android:color/transparent"
+	                android:layout_gravity="center_horizontal"
+	                android:src="@drawable/gc_btn_signup_verify"
+	                android:layout_width="wrap_content"
+	                android:layout_marginTop="40px"
+	                android:layout_marginBottom="0px"
+	             />
+	
+	            <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent" >
+	
+	                <TextView
+	                    android:id="@+id/txtnotnumber"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentLeft="true"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_marginTop="15dp"
+	                    android:text="@string/gc_not_your_number_desc"
+	                    android:textColor="@color/gc_pink"
+	                    android:textSize="16sp"
+	                     />
+	
+	                <TextView
+	                    android:id="@+id/txtresendpin"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_marginRight="10dp"
+	                    android:layout_marginTop="15dp"
+	                    android:text="@string/gc_resend_pin_desc"
+	                    android:textColor="@color/gc_pink"
+	                    android:textSize="16sp"
+	                     />
+	
+	            </RelativeLayout>
+	
+	
+	        </LinearLayout>
+	    </ScrollView>
+	</LinearLayout>
+	
+    <ListView
+        android:id="@android:id/list"
+        android:fadingEdge="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:isScrollContainer="false"
+         >
+    </ListView>
+    
+
+
+
+</RelativeLayout>

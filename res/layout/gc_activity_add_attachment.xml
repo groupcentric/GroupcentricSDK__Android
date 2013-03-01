@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/lyt_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gc_chatattachmentsbg" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btn_select_saved_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gc_btn_select_saved_picture" />
+
+        <ImageButton
+            android:id="@+id/btn_take_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gc_btn_take_new_picture" />
+
+        <ImageButton
+            android:id="@+id/btn_share_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gc_btn_share_websiteurl" />
+
+        <ImageButton
+            android:id="@+id/btn_setlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gc_btn_set_location" />
+    </LinearLayout>
+
+</RelativeLayout>

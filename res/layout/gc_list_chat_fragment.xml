@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gc_chatbg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_footer"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:isScrollContainer="false" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/lyt_inserted_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chat_footer"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:background="@drawable/gc_attachmentbg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:orientation="vertical"
+         >
+
+		
+        	<TextView
+                android:id="@+id/txtSharedObjectTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/gc_font_blue"
+                android:maxLines="2"
+                android:maxWidth="225dp"
+                android:visibility="gone" />
+        
+        <RelativeLayout
+            android:id="@+id/lyt_content_bottom_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            >
+            
+	        <RelativeLayout
+	            android:id="@+id/lyt_content"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="5dp" >
+	
+	            
+	            <ImageView
+	                android:id="@+id/imgSharedObjectPic"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:maxWidth="150dp"
+	                android:adjustViewBounds="true"
+	                android:scaleType="centerCrop"
+	                android:layout_alignParentLeft="true"
+	                android:visibility="gone" />
+	            
+	            <TextView
+	                android:id="@+id/txtAttachText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignLeft="@+id/imgChatInsertedPic"
+	                android:layout_alignRight="@+id/imgChatInsertedPic"
+	                android:visibility="gone" />
+	
+	            <ImageView
+	                android:id="@+id/imgChatInsertedPic"
+	                android:layout_width="100dp"
+	                android:layout_height="100dp"
+	                android:layout_centerVertical="true"
+	                android:visibility="gone" />
+	
+	            <WebView
+	                android:id="@+id/inserted_webview_map"
+	                android:layout_width="200dp"
+	                android:layout_height="100dp"
+	                android:layout_centerVertical="true"
+	                android:visibility="gone" >
+	            </WebView>
+	        </RelativeLayout>
+
+	        <LinearLayout
+	            android:id="@+id/lyt_btn_holder"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_toRightOf="@+id/lyt_content"
+	            android:orientation="vertical" >
+	
+	            <ImageButton
+	                android:id="@+id/btn_view"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/gc_btn_attachment_view" />
+	
+	            <ImageButton
+	                android:id="@+id/btn_replace"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="10dp"
+	                android:layout_marginTop="10dp"
+	                android:background="@drawable/gc_btn_attachment_replace" />
+	
+	            <ImageButton
+	                android:id="@+id/btn_remove"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/gc_btn_attachment_remove" />
+	        </LinearLayout>
+        
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gc_chatfooterbg" >
+    <RelativeLayout
+        android:id="@+id/dummy_layout"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+		 >
+        
+    </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gc_btn_plus"
+            android:contentDescription="" />
+
+        <EditText
+            android:id="@+id/edt_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_plus"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:layout_toRightOf="@+id/btn_plus"
+            android:background="@drawable/gc_edit_text"
+            android:hint="@string/gc_message_hint"
+            android:textColor="@color/gc_font_white"
+             />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gc_btn_send" />
+    </RelativeLayout>
+
+</RelativeLayout>

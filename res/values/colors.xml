@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gc_font_blue">#1d6bb5</color>
+    <color name="gc_font_black">#000</color>
+    <color name="gc_font_gray">#8d8e8f</color>
+    <color name="gc_font_lightgray">#cdcdcd</color>
+    <color name="gc_font_midgray">#777</color>
+    <color name="gc_font_white">#fff</color>
+    <color name="gc_font_off_white">#ebebeb</color>
+    <color name="gc_font_green">#73B72A</color>
+    <color name="gc_font_red">#830f0f</color>
+    <color name="gc_background_blue">#074998</color>
+    <color name="gc_green">#c3dc35</color>
+    <color name="gc_orange">#eb9b00</color>
+    <color name="gc_pink">#e3009b</color>
+    <color name="gc_blue">#2c93e3</color>
+    <color name="gc_notification_header_blue">#34bbec</color>
+    <color name="gc_last_message_date_color">#8c8c8c</color>
+    <color name="gc_group_list_last_message_color">#777777</color>
+    <color name="gc_group_list_last_message_time_color">#999999</color>
+    
+</resources>
+

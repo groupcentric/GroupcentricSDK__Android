@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_lyt_chat_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gc_list_item_chat_bg"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgChatPic"
+        style="@style/gc_ChatList_User_pic"
+        android:layout_alignBottom="@+id/lyt_userpic"
+        android:layout_alignLeft="@+id/lyt_userpic"
+        android:layout_alignRight="@+id/lyt_userpic"
+        android:layout_alignTop="@+id/lyt_userpic" />
+
+    <RelativeLayout
+        android:id="@+id/lyt_userpic"
+        style="@style/gc_ChatList_User_pic_holder" >
+
+        <ImageView
+            android:id="@+id/imgframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtMsgFrom"
+        style="@style/gc_ChatList_User_Name_Text"
+        android:layout_toRightOf="@+id/lyt_userpic" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        style="@style/gc_ChatList_Message_Text"
+        android:layout_alignLeft="@+id/txtMsgFrom"
+        android:layout_below="@+id/txtMsgFrom" />
+
+    <TextView
+        android:id="@+id/txtGroupLastMsgDte"
+        style="@style/gc_ChatList_Last_Message_Date_Text"
+        android:layout_alignLeft="@+id/txtMsgFrom"
+        android:layout_below="@+id/txtMessage" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gc_chatlistdivider" >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gc_chatbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lyt_group_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gc_detailstopbg"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imgGroupPic"
+            android:layout_width="5dp"
+            android:layout_height="5dp" 
+			android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+        
+         <ImageView
+            android:id="@+id/imgGroupPic2"
+            android:layout_width="5dp"
+            android:layout_height="5dp" 
+            android:layout_alignBottom="@+id/lyt_group_pic"
+            android:layout_alignLeft="@+id/lyt_group_pic"
+            android:layout_alignRight="@+id/lyt_group_pic"
+            android:layout_alignTop="@+id/lyt_group_pic"
+            android:visibility="gone"
+            android:scaleType="centerCrop" />
+         
+                  <ImageView
+            android:id="@+id/imgGroupPic3"
+            android:layout_width="5dp"
+            android:layout_height="5dp" 
+            android:layout_alignBottom="@+id/lyt_group_pic"
+            android:layout_alignLeft="@+id/lyt_group_pic"
+            android:layout_alignRight="@+id/lyt_group_pic"
+            android:layout_alignTop="@+id/lyt_group_pic"
+            android:visibility="gone"
+            android:scaleType="centerCrop" />
+                  
+            <ImageView
+            android:id="@+id/imgGroupPic4"
+            android:layout_width="5dp"
+            android:layout_height="5dp" 
+            android:layout_alignBottom="@+id/lyt_group_pic"
+            android:layout_alignLeft="@+id/lyt_group_pic"
+            android:layout_alignRight="@+id/lyt_group_pic"
+            android:layout_alignTop="@+id/lyt_group_pic"
+            android:visibility="gone"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/lyt_group_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gc_changegrouppic"
+            android:layout_marginLeft="5dp" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_tap_to_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lyt_group_pic"
+            android:layout_below="@+id/lyt_group_pic"
+            android:paddingBottom="5dp"
+            android:text="@string/gc_tap_to_change"
+            android:textColor="@color/gc_font_gray"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txt_group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/lyt_group_pic"
+            android:gravity="center_horizontal"
+            android:text="@string/gc_group_name"
+            android:textColor="@color/gc_font_black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_group_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_group_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/lyt_group_pic"
+            android:background="@drawable/gc_edit_text"
+            android:focusable="false"
+            android:imeOptions="actionDone"
+            android:lines="2"
+            android:textColor="@color/gc_font_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_psh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_group_details"
+        android:background="@drawable/gc_small_whiterowbg_unpressed" >
+
+        <TextView
+            android:id="@+id/txt_push_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt_group_details"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/gc_push_notifications"
+            android:textColor="@color/gc_font_black"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_PushToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gc_pushnotifications_on" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_started_by"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_psh"
+        android:background="@drawable/gc_small_whiterowbg_unpressed" >
+
+        <TextView
+            android:id="@+id/txt_started_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/gc_push_notifications"
+            android:textColor="@color/gc_font_black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lyt_psh"
+            android:background="@drawable/gc_grouplistdivider" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_started_by"
+        android:background="@drawable/gc_grouplistdivider" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_div"
+        android:background="@drawable/gc_chatlistnewbg_unpressed"
+        android:paddingTop="5dp" >
+
+        <ImageButton
+            android:id="@+id/imgBtn_LeaveGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gc_btn_leave_group"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_lyt_group_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gc_list_item_group_new_bg"
+    android:orientation="horizontal" >
+
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_lyt_content" 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent"   
+    android:layout_toLeftOf="@+id/lytGrpUpdateIndicator"
+    >
+
+    <RelativeLayout
+        android:id="@+id/lyt_picholder"
+        android:layout_width="75dip"
+        android:layout_height="75dip" 
+        >
+
+        <ImageView
+            android:id="@+id/imgGroupPic1"
+            android:layout_width="37.5dip"
+            android:layout_height="37.5dip"
+            android:scaleType="centerCrop" 
+             />
+
+        <ImageView
+            android:id="@+id/imgGroupPic2"
+            android:layout_toRightOf="@+id/imgGroupPic1"
+            android:layout_width="37.5dip"
+            android:layout_height="37.5dip"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+             />
+
+        <ImageView
+            android:id="@+id/imgGroupPic3"
+            android:layout_below="@+id/imgGroupPic1"
+            android:layout_alignLeft="@+id/imgGroupPic1"
+            android:layout_width="37.5dip"
+            android:layout_height="37.5dip"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+             />
+        <ImageView
+            android:id="@+id/imgGroupPic4"
+            android:layout_below="@+id/imgGroupPic1"
+            android:layout_toRightOf="@+id/imgGroupPic3"
+            android:layout_width="37.5dip"
+            android:layout_height="37.5dip"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtGroupTitle"
+        style="@style/gc_GroupList_Group_Name_Text"
+        android:layout_toRightOf="@+id/lyt_picholder"
+        />
+
+    <TextView
+        android:id="@+id/txtGroupLastMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtGroupTitle"
+        android:layout_below="@+id/txtGroupTitle"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:singleLine="false"
+         />
+
+    <TextView
+        android:id="@+id/txtGroupLastMsgDte"
+        style="@style/gc_GroupList_Group_Last_Message_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtGroupLastMsg"
+        android:layout_marginRight="10dip"
+         />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gc_grouplistdivider" >
+    </RelativeLayout>
+</RelativeLayout>
+
+ <RelativeLayout
+        android:id="@+id/lytGrpUpdateIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/gc_newmsgbar"
+        android:layout_centerVertical="true"
+
+        />
+</RelativeLayout>

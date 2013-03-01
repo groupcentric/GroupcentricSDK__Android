@@ -1,0 +1,141 @@
+<resources>
+    <string name="gc_app_name">GROUPcentric</string>
+    <!--Content Descriptions-->
+    <string name="gc_splash_login">Login</string>
+    <string name="gc_splash_signup">Sign Up</string>
+    <string name="gc_join">Join</string>
+    <string name="gc_back">Back</string>
+    <!--Signup Activity-->
+    <string name="gc_new_around_here">New around here or invited by a friend?</string>
+    <string name="gc_welcome_home">Welcome Home</string>
+    
+    <!--Signup Activity-->
+    <string name="gc_verify_number">Verify Number</string>
+    <string name="gc_name">Name</string>
+    <string name="gc_name_desc">So friends know who you are</string>
+    <string name="gc_phone">Phone</string>
+    <string name="gc_phone_desc">So friends can add you to groups - your number will never be seen by anyone</string>
+    <string name="gc_username_required">Name required</string>
+    <string name="gc_phone_required">Phone number required</string>
+    <string name="gc_registration_problem">There was a problem with registration..</string>
+    <string name="gc_passcode_sent">Pin sent</string>
+    <string name="gc_signup_header">Sign Up</string>
+   
+    <!--SignUpJoin Activity-->
+    <string name="gc_enter_pin">Enter Pin</string>
+    <string name="gc_enter_pin_desc">That we sent to</string>
+    <string name="gc_not_your_number_desc">Not your number?</string>
+    <string name="gc_resend_pin_desc">Resend Pin</string>
+    <string name="gc_enter_pin_header">Enter Pin</string>
+    <string name="gc_resend_pin_fail">There was a problem sending the pin</string>
+    <string name="gc_resend_pin_pass">Pass code sent</string>
+    <string name="gc_pin_required">Please enter pin</string>
+    <string name="gc_join_failed">Registration failed</string>
+    <string name="gc_join_complete">Registration complete</string>
+    
+    <!--Signup & SignUpJoin Activities-->
+    <string name="gc_privacy_tos">Privacy &amp; TOS</string>
+    
+    <!--Login Activity-->
+    <string name="gc_log_in">Log In</string>
+    <string name="gc_login_phone">Phone Number</string>
+    <string name="gc_login_pin">Pin</string>
+    <string name="gc_login_forgot_pin">Forgot Pin?</string>
+    <string name="gc_login_phone_required">Phone number required</string>
+    <string name="gc_login_password_required">Password required</string>
+    <string name="gc_login_resend_pass">Password sent</string>
+    <string name="gc_login_resend_pass_fail">There was a problem sending password </string>
+    <string name="gc_login_complete">Login complete</string>
+    <string name="gc_login_fail">There was a problem loggin in</string>
+    <!--SignUpJoin & Login Activities-->
+    <string name="gc_pin_hint">####</string>
+    
+    <!--GroupList Activity-->
+    <string name="gc_menu">Menu</string>
+    <string name="gc_create_group_chat">Create Group Chat</string>
+    <string name="gc_grouplist_help">Tap the + to start a group chat with friends</string>
+    <string name="gc_grouplist_help_share_link">Select a group to share link with</string>
+    <string name="gc_grouplist_help_share_text">Select a group to share text with</string>
+    <string name="gc_grouplist_help_share_image">Select a group to share image with</string>
+    <string name="gc_grouplist_nogroup_message">Welcome to Groupcentric!\n\nTo get started, press the Start a Group button.</string>
+    <string name="gc_remove_fail">There was a problem removing your group</string>
+    <string name="gc_remove_pass">Left group</string>
+    <string name="gc_refresh_menu">Refresh</string>
+    
+    <!--ChatList Fragment-->
+    <string name="gc_message_hint">Type Message</string>
+    
+   <!--FriendsList Fragment-->
+   <string name="gc_message_friends_location">Friends Location</string>
+   <string name="gc_message_friends_no_location">No Friend Locations</string>
+   <string name="gc_user_indicator">ME</string>
+   <string name="gc_use_tap_to_view">Tap to see location</string>
+   
+   <!--Group Details Fragment-->
+   <string name="gc_group_name">Group Chat Name</string>
+   <string name="gc_push_notifications">Push Notifications</string>
+   <string name="gc_group_started_by">Group Started By</string>
+   <string name="gc_tap_to_change">Tap to Change</string>
+   
+   <!--ContactList-->
+   <string name="gc_undefinedTypeLabel">(Undefined)</string>
+   <string name="gc_seach_contacts">Search Contacts</string>
+   <string name="gc_add_friends">Add Friends</string>
+   <string name="gc_you_have_added">You have added</string>
+   <string name="gc_friends">friends</string>
+   <string name="gc_friend">friend</string>
+   
+      <!--Edit group name-->
+   <string name="gc_edit_group_name">Group Name</string>
+   <string name="gc_done">Done</string>
+   <string name="gc_cancel">Cancel</string>
+   
+   <!--Start Group-->
+   <string name="gc_start">Start</string>
+   <string name="gc_new_group">New Group</string>
+   <string name="gc_new_group_name">Group Name</string>
+   <string name="gc_new_group_message_hint">Message:</string>
+   <string name="gc_enter_group_name">Please enter a group name</string>
+   
+   <!--Notifications-->
+   <string name="gc_notifications">Notifications</string>
+   
+   <!--Profile-->
+   <string name="gc_username">User Name</string>
+   <string name="gc_settings">Settings</string>
+   <string name="gc_settings_desc">Name, Profile, Picture, Password</string>
+   <string name="gc_feedback">Feedback</string>
+   <string name="gc_feedback_desc">Tell us what you really think</string>
+   <string name="gc_about">About</string>
+   <string name="gc_about_desc">Oh just a little speed dating info on us</string>
+   <string name="gc_tos">TOS / Privacy</string>
+   <string name="gc_tos_desc">Some light Sunday reading material</string>
+   <string name="gc_logout">Logout</string>
+   <string name="gc_logout_desc">Logout of GROUPcentric</string>
+   <string name="gc_logout_prompt">Are you sure you wish to logout</string>
+   <string name="gc_profile">Profile</string>
+   <string name="gc_profile_setteings">http://groupcentric.com/m/profile.html</string>
+   <string name="gc_profile_about">http://groupcentric.com/m/about.html</string>
+   <string name="gc_profile_feedback">http://groupcentric.com/m/feedback.html</string>
+   <string name="gc_profile_tos">http://groupcentric.com/m/privacytos.html</string>
+   
+    <!--Uplodad-->
+   <string name="gc_upload_photo">Uploading Photo</string>
+   
+   <!--EventDetails-->
+   <string name="gc_event">Event</string>
+   <string name="gc_location">Location</string>
+   <string name="gc_date">Date</string>
+   <string name="gc_website">Website</string>
+   <string name="gc_details">Details</string>
+   
+   <!--GPS-->
+   <string name="gc_loading_gps">Loading GPS</string>
+   <string name="gc_checking_gps_status">Checking GPS</string>
+   <string name="gc_gps_disabled">GPS Disabled</string>
+   
+   <!--Share Web link-->
+   <string name="gc_search_or_type_url">Search or type URL</string>
+   <string name="gc_send_link_message_hint">Type Message (Optional)</string>
+   
+</resources>

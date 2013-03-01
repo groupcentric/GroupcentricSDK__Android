@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_lyt_friend_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gc_list_item_group_new_bg"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imgFriendPic"
+        style="@style/gc_FriendList_Friend_pic" />
+
+    <TextView
+        android:id="@+id/txtFriendName"
+        style="@style/gc_FriendList_Friend_Name_Text"
+        android:layout_toRightOf="@+id/imgFriendPic" 
+        android:layout_toLeftOf="@+id/txtUserIndicator"/>
+    
+    <TextView
+        android:id="@+id/txtFriendLocation"
+        style="@style/gc_FriendList_Friend_location_Text"
+        android:layout_toRightOf="@+id/imgFriendPic" 
+        android:layout_toLeftOf="@+id/txtUserIndicator"
+        android:layout_below="@+id/txtFriendName"/>
+        <TextView
+        android:id="@+id/txtTapToViewLocation"
+        style="@style/gc_FriendList_Friend_location_Text"
+        android:layout_toRightOf="@+id/imgFriendPic" 
+        android:layout_toLeftOf="@+id/txtUserIndicator"
+        android:layout_below="@+id/txtFriendLocation"
+        android:text="@string/gc_use_tap_to_view"/>
+    
+     <TextView
+         android:id="@+id/txtUserIndicator"
+         style="@style/gc_FriendList_Friend_Name_Text"
+         android:textColor="@color/gc_blue"
+         android:paddingRight="10dp"         
+         android:text="@string/gc_user_indicator"
+         android:layout_alignParentRight="true"
+          />
+     
+     
+     
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gc_chatlistdivider" >
+    </RelativeLayout>
+
+</RelativeLayout>

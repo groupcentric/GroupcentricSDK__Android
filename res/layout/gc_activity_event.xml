@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gc_headerbg" >
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gc_btn_back"
+            android:contentDescription="@string/gc_back" />
+
+        <ImageButton
+            android:id="@+id/btn_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBack"
+            android:background="@drawable/gc_notifications_inactive"
+            android:contentDescription="@string/gc_notifications" />
+
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_colorline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_bar"
+        android:background="@drawable/gc_colorlineimg" >
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lyt_colorline"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt_colorline"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/lyt_userInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gc_list_item_small_row_bg" >
+
+                <TextView
+                    android:id="@+id/txtEventName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/img_eventPic"
+                    android:textColor="@color/gc_font_black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/img_eventPic"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gc_blankfriendimg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_bar"
+                android:background="@drawable/gc_notificationscolorline" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_objsubTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gc_list_item_profile_bg" 
+             >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@+id/img_objlocation" >
+
+                    
+
+                    <TextView
+                        android:id="@+id/txt_objsubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gc_font_gray"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_objlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/gc_btn_location" />
+            </RelativeLayout>
+            
+            
+
+            <RelativeLayout
+                android:id="@+id/lyt_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gc_list_item_profile_bg" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" 
+                    android:layout_toLeftOf="@+id/btn_date">
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gc_font_gray"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/gc_btn_date" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_additional"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gc_list_item_profile_bg" >
+
+                <LinearLayout
+                    android:id="@+id/lyt_website"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" 
+                    android:layout_toLeftOf="@+id/img_ws">
+
+                     <TextView
+                        android:id="@+id/txt_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gc_font_gray"
+                        android:textSize="15dp" 
+                        android:layout_marginBottom="3dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_ws"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/gc_btn_about" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gc_list_item_profile_bg" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@+id/img_details" >
+
+                 <WebView
+                            android:id="@+id/desc_webview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            ></WebView>
+                </LinearLayout>
+
+                
+            </RelativeLayout>
+
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

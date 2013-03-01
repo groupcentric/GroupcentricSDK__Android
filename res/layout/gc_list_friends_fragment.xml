@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/gc_chatbg"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/map_friends_location"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true" >
+
+    </WebView>
+    <ImageView
+        android:id="@+id/img_blankmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gc_blankmap"
+        android:layout_alignBottom="@+id/map_friends_location"
+        android:layout_alignLeft="@+id/map_friends_location"
+        android:layout_alignRight="@+id/map_friends_location"
+        android:layout_alignTop="@+id/map_friends_location"
+        android:visibility="gone"
+         />
+    <TextView
+        android:id="@+id/txtFriendLocatoin"
+        style="@style/gc_FriendList_Map_Footer_Text"
+        android:layout_below="@+id/map_friends_location"
+        android:text="@string/gc_message_friends_location" />
+
+    <LinearLayout
+        android:id="@+id/map_conent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/map_friends_location"
+        android:layout_alignLeft="@+id/map_friends_location"
+        android:layout_alignRight="@+id/map_friends_location"
+        android:layout_alignTop="@+id/map_friends_location"
+        android:layout_centerHorizontal="true" >
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_invite_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFriendLocatoin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/gc_btn_invite_friends"
+        android:contentDescription="@string/gc_back" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_invite_friends"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:isScrollContainer="false" >
+    </ListView>
+
+</RelativeLayout>
