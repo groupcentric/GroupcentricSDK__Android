@@ -1,7 +1,7 @@
 Feature
 ====================
 
-v1.0  12/6/2012
+v1.0.0  2/28/13
 
 This is the Groupcentric SDK for Android.
 This is the simplest way to add private sharing and group chat into your app.
@@ -51,11 +51,31 @@ Copyright 2012 Shizzlr Inc.
 
 ====================
 
-Our works
+Android apps using this SDK
 ====================
 
-<a href="http://groupcentric.com" target="_blank">Some apps using this SDK</a>
+<a href="http://groupcentric.com" target="_blank"><img src="http://groupcentric.com/img/support/gc_appicon_72.png" alt="Groupcentric" /></a>
 
-<img src="http://groupcentric.com/img/support/gc_appicon_72.png" alt="Groupcentric" /> &nbsp; 
+ &nbsp;  &nbsp; 
+ 
+ <a href="http://groupcentric.com/catsndogs" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/cnd@2x.png" alt="Cats n Dogs" /></a>
 
-
+ &nbsp;  &nbsp; 
+ 
+ <a href="http://groupcentric.com/placestogo" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/p2g@2x.png" alt="Places To Go" /></a>
+ 
+  &nbsp;  &nbsp; 
+  
+ <a href="http://groupcentric.com/handmade" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/hm@2x.png" alt="Handmade" /></a>
+ 
+  &nbsp;  &nbsp; 
+  
+ <a href="http://groupcentric.com/movienight" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/mn@2x.png" alt="Movie Night" /></a>
+ 
+  &nbsp;  &nbsp; 
+  
+ <a href="http://groupcentric.com/yummyrecipes" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/yr@2x.png" alt="Yummy Recipes" /></a>
+   
+  &nbsp;  &nbsp; 
+  
+ <a href="http://groupcentric.com/eventcentric" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/ec@2x.png" alt="Eventcentric" /></a>
