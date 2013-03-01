@@ -53,29 +53,27 @@ Copyright 2012 Shizzlr Inc.
 
 Android apps using this SDK
 ====================
-
-<a href="http://groupcentric.com" target="_blank"><img src="http://groupcentric.com/img/support/gc_appicon_72.png" alt="Groupcentric" /></a>
-
- &nbsp;  &nbsp; 
- 
- <a href="http://groupcentric.com/catsndogs" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/cnd@2x.png" alt="Cats n Dogs" /></a>
-
- &nbsp;  &nbsp; 
- 
- <a href="http://groupcentric.com/placestogo" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/p2g@2x.png" alt="Places To Go" /></a>
- 
-  &nbsp;  &nbsp; 
-  
- <a href="http://groupcentric.com/handmade" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/hm@2x.png" alt="Handmade" /></a>
- 
-  &nbsp;  &nbsp; 
-  
- <a href="http://groupcentric.com/movienight" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/mn@2x.png" alt="Movie Night" /></a>
- 
-  &nbsp;  &nbsp; 
-  
- <a href="http://groupcentric.com/yummyrecipes" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/yr@2x.png" alt="Yummy Recipes" /></a>
-   
-  &nbsp;  &nbsp; 
-  
- <a href="http://groupcentric.com/eventcentric" target="_blank"><img src="http://groupcentric.com/img/appicons/thumbs/ec@2x.png" alt="Eventcentric" /></a>
+<table><tr>
+<td>
+	<a href="http://groupcentric.com" target="_blank"><img height='72' src="http://groupcentric.com/img/support/gc_appicon_72.png" alt="Groupcentric" /></a>
+</td>
+<td>
+	<a href="http://groupcentric.com/catsndogs" target="_blank"><img height='72' src="http://groupcentric.com/img/appicons/thumbs/cnd@2x.png" alt="Cats n Dogs" /></a>
+</td>
+<td>
+ 	<a href="http://groupcentric.com/placestogo" target="_blank"><img height='72' src="http://groupcentric.com/img/appicons/thumbs/p2g@2x.png" alt="Places To Go" /></a>
+</td>
+<td>
+ 	<a href="http://groupcentric.com/handmade" target="_blank"><img height='72' src="http://groupcentric.com/img/appicons/thumbs/hm@2x.png" alt="Handmade" /></a>
+</td>
+<td>
+ 	<a href="http://groupcentric.com/movienight" target="_blank"><img height='72' src="http://groupcentric.com/img/appicons/thumbs/mn@2x.png" alt="Movie Night" /></a>
+</td>
+<td>
+ 	<a href="http://groupcentric.com/yummyrecipes" target="_blank"><img height='72' src="http://groupcentric.com/img/appicons/thumbs/yr@2x.png" alt="Yummy Recipes" /></a>
+</td>
+<td>
+ <a href="http://groupcentric.com/eventcentric" target="_blank"><img height='72' src="http://groupcentric.com/img/appicons/thumbs/ec@2x.png" alt="Eventcentric" /></a>
+</td>
+</tr>
+</table>
