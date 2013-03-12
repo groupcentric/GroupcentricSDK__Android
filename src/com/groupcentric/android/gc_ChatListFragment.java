@@ -368,7 +368,8 @@ public class gc_ChatListFragment extends ListFragment implements OnClickListener
 		//set title to txtAttachText, pic to imgChatInsertedPic
 		if(sharedObj.getType().equals("1"))
 		{
-			((EditText) getActivity().findViewById(R.id.edt_message)).setText("'"+sharedObj.getTitle()+"'");
+			 if (sharedObj.getTitle()!=null)
+				 ((EditText) getActivity().findViewById(R.id.edt_message)).setText("'"+sharedObj.getTitle()+"'");
 		}
 		else
 			((TextView) getActivity().findViewById(R.id.txtSharedObjectTitle)).setText(sharedObj.getTitle());

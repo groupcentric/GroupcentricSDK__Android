@@ -396,7 +396,7 @@ public class gc_GroupDetails extends BaseTaskGCFragmentActivity  implements OnCl
 			if (mTabHost.getCurrentTabTag().equalsIgnoreCase("Chat")) {
 				gc_ChatListFragment chatFragment = (gc_ChatListFragment) this.getSupportFragmentManager().findFragmentByTag("Chat");
 				if (chatFragment != null)
-					if (holdMessageCount==0 | holdMessageCount != tmpGroup.getMessages().size())
+					//if (holdMessageCount==0 | holdMessageCount != tmpGroup.getMessages().size())
 						chatFragment.refreshChatDetails();
 						holdMessageCount = tmpGroup.getMessages().size();
 			}
@@ -1012,5 +1012,25 @@ public class gc_GroupDetails extends BaseTaskGCFragmentActivity  implements OnCl
     		chatUpdating = true;
     		return chatUpdating;
     }
+    
+    public void DEVELOPER_FUNCTION_FROM_CUSTOM_OBJECT_CLICK_IN_gc_GroupChatAdapter(Message ms) {
+		try {
+			String YOUR_CLASS_PACKAGE_NAME = "your.package.class";
+			Intent intent = new Intent(this, this.getApplication().getClass().getClassLoader()
+					.loadClass(YOUR_CLASS_PACKAGE_NAME));
+			//use the Message object and pass any extras you need from it to your class
+			 //for example this shows how to pass the title, var1, and object date
+			  		
+			intent.putExtra("title", ms.getVar_title());
+			intent.putExtra("Var1", ms.getVar1());
+			intent.putExtra("ObjectDate", ms.getVar_date());
+            if (ms.getVar1()!=null & ms.getVar1().length()>0)
+			startActivity(intent);
+			
+		} catch (ClassNotFoundException e) {
+			Toast.makeText(this, "Class not found..", Toast.LENGTH_SHORT).show();
+			e.printStackTrace();
+		}
+	}
     
 }

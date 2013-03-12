@@ -261,7 +261,7 @@ public class gc_GroupsListFragment extends BaseTaskGCListFragment implements Vie
 			Log.i("here","here3");
 			((LinearLayout) getActivity().findViewById(R.id.layout_signup_view1)).setVisibility(View.GONE);
 			((LinearLayout) getActivity().findViewById(R.id.layout_signup_view2)).setVisibility(View.GONE);
-			((LinearLayout) getActivity().findViewById(R.id.layout_signup_view2)).setVisibility(View.GONE);
+			((LinearLayout) getActivity().findViewById(R.id.layout_signup_view3)).setVisibility(View.GONE);
 			getListView().setVisibility(0);
 			getMyGroups();
 			registerForContextMenu(getListView());
